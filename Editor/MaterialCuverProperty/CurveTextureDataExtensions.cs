@@ -58,6 +58,8 @@ namespace Sanimal.Editor
                 CreateTextureForMaterial(curveData, curveData.width, material, property);
                 UpdateCurveTexture(curveData);
             }
+
+            property.textureValue = curveData.texture;
         }
     }
 }
