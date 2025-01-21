@@ -22,7 +22,7 @@ namespace Sanimal.Editor
                 GUILayout.BeginHorizontal();
                 GUILayout.Label(property.displayName);
                 if (GUILayout.Button("Create curve data"))
-                    MaterialCuverDataEditor.CreateDataForMaterial(material);
+                    MaterialCurveDataEditor.CreateDataForMaterial(material);
                 GUILayout.EndHorizontal();
                 return;
             }
