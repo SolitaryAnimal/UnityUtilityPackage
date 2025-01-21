@@ -42,7 +42,7 @@ namespace Sanimal.Editor
             
             EditorGUILayout.CurveField(property.displayName, curveData.curve);
             if (allowSetWidth)
-                curveData.width = Math.Max(EditorGUILayout.IntField("", curveData.width, GUILayout.MaxWidth(30)), 0);
+                curveData.width = Math.Max(EditorGUILayout.IntField("", curveData.width, GUILayout.MaxWidth(30)), 1);
             
             if (EditorGUI.EndChangeCheck())
             {
