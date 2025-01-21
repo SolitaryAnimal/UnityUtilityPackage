@@ -6,6 +6,7 @@ namespace Sanimal
 {
     public class MaterialCuverData : ScriptableObject, ISerializationCallbackReceiver
     {
+        [SerializeField]
         private CurveTextureData[] cuverDatas;
 
         public Dictionary<string, CurveTextureData> Curves { get; private set; } = new();
